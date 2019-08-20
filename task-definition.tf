@@ -1,6 +1,6 @@
-data "aws_ecs_task_definition" "nginx" {
-  task_definition = "${aws_ecs_task_definition.nginx.family}"
-}
+#data "aws_ecs_task_definition" "nginx" {
+#  task_definition = "${aws_ecs_task_definition.nginx.family}"
+#}
 
 resource "aws_ecs_task_definition" "nginx" {
     family                = "hello_world"
