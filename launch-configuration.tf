@@ -6,7 +6,7 @@ resource "aws_launch_configuration" "ecs-launch-configuration" {
 
     root_block_device {
       volume_type = "standard"
-      volume_size = 100
+      volume_size = 10
       delete_on_termination = true
     }
 
