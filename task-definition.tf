@@ -8,7 +8,7 @@ resource "aws_ecs_task_definition" "nginx" {
 [
   {
     "name": "nginx",
-     "image": "721834156908.dkr.ecr.us-east-1.amazonaws.com/demo:latest",
+     "image": "721834156908.dkr.ecr.us-east-1.amazonaws.com/demo:${BUILD_NUMBER}",
     "essential": true,
     "portMappings": [
       {
